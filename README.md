@@ -8,14 +8,14 @@ Teach practical aspects of productionizing ML services — from training and exp
 
 ### Target audience
 
-Data scientists and ML engineers. Also software engineers and data engineers interested in learning about putting ML in production.
+Data scientists and ML engineers. Also software engineers and data engineers that are interested in learning about putting ML in production.
 
 ### Pre-requisites
 
 * Python
 * Docker
 * Being comfortable with the command line 
-* Prior exposure to machine learning (at work or from other courses, e.g. from [ML Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp))
+* Prior exposure to machine learning
 * Prior programming experience (at least 1+ year)
 
 ## Syllabus
