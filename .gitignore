@@ -1,0 +1,7 @@
+*.pkl
+*.b
+*.bin
+models/
+homework.db
+mlartifacts/
+mlruns/
