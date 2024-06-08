@@ -1,0 +1,22 @@
+data_prep:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 700
+  outdated_starting_at:
+    second_of_minute: 7
+  project: unit_1_data_preparation
+  repo_path: /home/src/mlops/unit_1_data_preparation
+  settings:
+    build: {}
+sklearn_training:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 700
+  project: unit_1_data_preparation
+  repo_path: /home/src/mlops/unit_1_data_preparation
+  settings:
+    build: {}
+    ingest: {}
+    prepare: {}
