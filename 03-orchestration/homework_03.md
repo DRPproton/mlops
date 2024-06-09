@@ -22,8 +22,10 @@ How many lines are in the created `metadata.yaml` file?
 
 - 35
 - 45
-- 55
+- **55**
 - 65
+  
+> 55
 
 ## Question 3. Creating a pipeline
 
