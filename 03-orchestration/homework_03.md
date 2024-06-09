@@ -11,7 +11,7 @@ First, let's run Mage with Docker Compose. Follow the quick start guideline.
 What's the version of Mage we run? 
 
 (You can see it in the UI)
-> Answer => v0.9.71
+> **Answer => v0.9.71**
 
 
 ## Question 2. Creating a project
@@ -22,10 +22,10 @@ How many lines are in the created `metadata.yaml` file?
 
 - 35
 - 45
-- **55**
+- 55
 - 65
   
-> Answer => 55
+> **Answer => 55**
 
 ## Question 3. Creating a pipeline
 
