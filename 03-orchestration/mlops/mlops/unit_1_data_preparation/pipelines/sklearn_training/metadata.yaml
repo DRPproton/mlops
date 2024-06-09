@@ -6,7 +6,8 @@ blocks:
       path: unit_1_data_preparation/global_data_products/data_sklearn.py
     global_data_product:
       uuid: data_prep
-  downstream_blocks: []
+  downstream_blocks:
+  - hyperparameter_tuning/sklearn
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -18,6 +19,80 @@ blocks:
   type: global_data_product
   upstream_blocks: []
   uuid: data_sklearn
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/markdowns/dynamic_block_info.md
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: dynamic_block_info
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: dynamic_block_info
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration:
+    dynamic: true
+    file_source:
+      path: unit_1_data_preparation/custom/load_models.py
+  downstream_blocks:
+  - hyperparameter_tuning/sklearn
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_models
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: load_models
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/transformers/hyperparameter_tuning/sklearn.py
+  downstream_blocks:
+  - sklearn
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: hyperparameter_tuning/sklearn
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - data_sklearn
+  - load_models
+  uuid: hyperparameter_tuning/sklearn
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/data_exporters/sklearn.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: sklearn
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - hyperparameter_tuning/sklearn
+  uuid: sklearn
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -40,5 +115,8 @@ spark_config: {}
 tags: []
 type: python
 uuid: sklearn_training
+variables:
+  max_evaluations: 50
+  random_state: 7
 variables_dir: /home/src/mage_data/unit_1_data_preparation
 widgets: []

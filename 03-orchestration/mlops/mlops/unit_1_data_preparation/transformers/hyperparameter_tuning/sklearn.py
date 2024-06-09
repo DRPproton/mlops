@@ -32,8 +32,8 @@ def hyperparameter_tuning(
         y_train=y_train,
         X_val=X_val,
         y_val=y_val,
-        max_evaluations=50,
-        random_state=7,
+        max_evaluations=kwargs.get('max_evaluations'),
+        random_state=kwargs.get('random_state'),
     )
 
     return hyperparameters, X, y, dict(cls=model_class, name=model_class_name)
