@@ -32,8 +32,8 @@ def hyperparameter_tuning(
         training,
         validation,
         callback=lambda **opts: track_experiment(**{**opts, **kwargs}),
-        max_evaluations=kwargs.get('max_evaluations', 50),
-        early_stopping_rounds=kwargs.get('early_stopping_rounds', 30),
+        max_evaluations=kwargs.get('max_evaluations', 2),
+        early_stopping_rounds=kwargs.get('early_stopping_rounds', 2),
         **kwargs,
     )
 
