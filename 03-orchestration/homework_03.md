@@ -98,6 +98,8 @@ Hint: print the `intercept_` field in the code block
 - 27.77
 - 31.77
 
+  > **Answer => 24.77**
+
 ## Question 6. Register the model 
 
 The model is trained, so let's save it with MLFlow.
