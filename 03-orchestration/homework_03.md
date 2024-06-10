@@ -77,6 +77,8 @@ What's the size of the result?
 - 3,316,216 
 - 3,503,766
 
+> **Answer => 3,316,216**
+
 ## Question 5. Train a model
 
 We will now train a linear regression model using the same code as in homework 1
