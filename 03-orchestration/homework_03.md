@@ -40,6 +40,8 @@ How many records did we load?
 - 3,403,766
 - 3,603,766
 
+> **Answer => 3,403,766**
+
 ## Question 4. Data preparation
 
 
