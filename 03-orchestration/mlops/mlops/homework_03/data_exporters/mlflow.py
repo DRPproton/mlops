@@ -6,7 +6,7 @@ if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
 
 
-mlflow.set_tracking_uri("sqlite://mlflow:5000")
+mlflow.set_tracking_uri("http://mlflow:5000")
 mlflow.set_experiment("nyc-taxi-experiment")
 
 @data_exporter
