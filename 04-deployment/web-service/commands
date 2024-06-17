@@ -1,0 +1,6 @@
+- #Command to run with gunicorn in command line
+- $ gunicorn --bind=0.0.0.0:9696 predict:app
+
+- #Run Docker 
+- $ docker build -t ride-duration-prediction:v1 . 
+- $ docker run -it --rm -p 9696:9696 ride-duration-prediction:v1
