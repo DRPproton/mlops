@@ -1,0 +1,15 @@
+{
+  "id": "ffe0dccf-0e32-4a3b-a3ea-64cd94b16654",
+  "name": "NYC Taxi Data Quality Homework",
+  "description": "Homework solution for week 5",
+  "dashboard": {
+    "name": "NYC Taxi Data Quality Homework",
+    "panels": [],
+    "tabs": [],
+    "tab_id_to_panel_ids": {}
+  },
+  "team_id": null,
+  "date_from": null,
+  "date_to": null,
+  "created_at": "2024-06-22T09:57:33.580333"
+}
